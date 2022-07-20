@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Kavoon&family=Life+Savers:wght@700&family=Roboto:wght@100&display=swap');
+        </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>Grzegorz (Greg) Marcjan</title>
+</head>
+
+<body>
+
+    <div class="col1">
+        <div class="col1row1">
+            <img src="assets/profile.png">
+        </div>
+        <div class="col1row2">
+            <button class="button active">Profile</button>
+            <button class="button">Photography</button>
+            <button class="button">Music</button>
+            <button class="button">Contact</button>
+        </div>
+        <div class="col1row3">
+
+        </div>
+    </div>
+
+    <div class="col2">
+        <div class="col2row1">
+            <h1>Grzegorz (Greg) Marcjan</h1>
+            <p>If you're brave: /ˈɡʐɛ.ɡɔʂ/</p>
+            <p>••• recruiter, social justice advocate and aspiring developer •••</p>
+        </div>
+        <div class="col2row2">
+
+        </div>
+    </div>
+    
+    <div class="col3">
+
+    </div>
+
+    <script>
+        $("button").on("click", function(){
+            $("button").removeClass("active");
+            $(this).addClass("active");
+            });
+    </script>
+
+</body>
+</html>
