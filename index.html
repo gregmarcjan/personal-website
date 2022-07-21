@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Kavoon&family=Life+Savers:wght@700&family=Roboto:wght@100&display=swap');
@@ -22,10 +22,10 @@
             <img src="assets/profile.png">
         </div>
         <div class="col1row2">
-            <button class="button active">Profile</button>
-            <button class="button">Photography</button>
-            <button class="button">Music</button>
-            <button class="button">Contact</button>
+            <button class="button active profile" onclick="switcheroo('../content/profile.html')">Profile</button>
+            <button class="button photography" onclick="switcheroo('../content/photography.html')">Photography</button>
+            <button class="button music" onclick="switcheroo('../content/music.html')">Music</button>
+            <button class="button contact" onclick="switcheroo('../content/contact.html')">Contact</button>
         </div>
         <div class="col1row3">
 
@@ -40,6 +40,9 @@
         </div>
         <div class="col2row2">
 
+            <iframe id="frame" width="100%" height="100%" src="profile.html" frameborder="0" style="border-top-left-radius: 1em;
+            border-top-right-radius: 1em; border: 0; float: none;"></iframe>
+
         </div>
     </div>
     
@@ -49,9 +52,14 @@
 
     <script>
         $("button").on("click", function(){
-            $("button").removeClass("active");
-            $(this).addClass("active");
-            });
+        $("button").removeClass("active");
+        $(this).addClass("active");
+        });
+
+        function switcheroo(path) {
+        document.getElementById('frame').src = path;
+        }
+        
     </script>
 
 </body>
