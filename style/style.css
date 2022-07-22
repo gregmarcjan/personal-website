@@ -181,6 +181,78 @@ div.profile p {
     padding-bottom: 1em;
 }
 
+div.profile form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+div.profile.input {
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+    padding: 0.5em;
+}
+
+div.profile.photos {
+    display: inline-block;
+    flex-direction: column;
+    align-self: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+    padding: 0.5em;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 1em; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+}
+
+input[type=email], select, textarea {
+    width: 100%; 
+    padding: 1em; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+}
+
+input[type=submit] {
+    width: 10em;
+    background-color: #cc5b28;
+    border: none;
+    border-radius: 0.5em;
+    color: #e3e9cc;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7rem;
+    font-family: 'Life Savers', cursive;
+    font-weight: 900;
+    margin: 4px 2px;
+}
+
+input[type=submit]:hover {
+    background-color:#e3e9cc;
+    color: #cc5b28;
+    transition: 0.7s;
+    border: 1px solid #cc5b28; 
+}
+
 /* Adjustments for smaller screens */
 
 @media screen and (max-width: 800px) {
