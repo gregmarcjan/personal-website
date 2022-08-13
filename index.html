@@ -22,10 +22,10 @@
             <img src="assets/profile.png">
         </div>
         <div class="col1row2">
-            <button class="button active profile" onclick="switcheroo('../content/profile.html')">Profile</button>
-            <button class="button photography" onclick="switcheroo('../content/photography.html')">Photography</button>
-            <button class="button music" onclick="switcheroo('../content/music.html')">Music</button>
-            <button class="button contact" onclick="switcheroo('../content/contact.html')">Contact</button>
+            <button id="1" class="button active profile">Profile</button>
+            <button id="2" class="button photography">Photography</button>
+            <button id="3" class="button music">Music</button>
+            <button id="4" class="button contact">Contact</button>
         </div>
         <div class="col1row3">
 
@@ -38,11 +38,15 @@
             <p>If you're brave: /ˈɡʐɛ.ɡɔʂ/</p>
             <p>••• recruiter, social justice advocate and aspiring developer •••</p>
         </div>
-        <div class="col2row2">
-
-            <iframe id="frame" width="100%" height="100%" src="../content/profile.html" frameborder="0" style="border-top-left-radius: 1em;
-            border-top-right-radius: 1em; border: 0; float: none;"></iframe>
-
+        <div id="col2row2" class="profile subpage">
+                <h1>PROFILE</h1>
+                <h2>Recruiter</h2>
+                <p>I have over 10 years or technical and business recruitment experience. I have worked in the manufacturing and high-tech industries, and worked with a very diverse pool of candidates: from early career/internship/new graduate talent, all the way to leadership and executive level.</p>
+                <p>I specialize in DEI sourcing and recruiting within the legal framwork of the United States. I am also knowledgable in hiring practices and employment culture of various countries in APAC, such as Singapore and Japan.</p>
+                <h2>Coach</h2>
+                <p>I am a CTI-trained life coach, strongly believing in all of us being naturally resourceful, creative, and whole. While my training has provided me skills useful in general life coaching, I specialize in career coaching and have deep experience working with individuals suffering from imposter syndrome.</p>
+                <h2>Developer</h2>
+                <p>I am a Coding Dojo certified full stack developer (Java). Favorite framework: Spring Boot.</p>
         </div>
     </div>
     
@@ -51,14 +55,42 @@
     </div>
 
     <script>
-        $("button").on("click", function(){
-        $("button").removeClass("active");
+
+        $("#1").on("click", function(){
+        $("#1").removeClass("active");
         $(this).addClass("active");
+        $("#2").removeClass("active");
+        $("#3").removeClass("active");
+        $("#4").removeClass("active");
+        $("#col2row2").load( "../content/profile.html");
         });
 
-        function switcheroo(path) {
-        document.getElementById('frame').src = path;
-        }
+        $("#2").on("click", function(){
+        $("#2").removeClass("active");
+        $(this).addClass("active");
+        $("#1").removeClass("active");
+        $("#3").removeClass("active");
+        $("#4").removeClass("active");
+        $("#col2row2" ).load( "../content/photography.html");
+        });
+
+        $("#3").on("click", function(){
+        $("#3").removeClass("active");
+        $(this).addClass("active");
+        $("#1").removeClass("active");
+        $("#2").removeClass("active");
+        $("#4").removeClass("active");
+        $("#col2row2" ).load( "../content/music.html");
+        });
+
+        $("#4").on("click", function(){
+        $("#4").removeClass("active");
+        $(this).addClass("active");
+        $("#1").removeClass("active");
+        $("#3").removeClass("active");
+        $("#2").removeClass("active");
+        $("#col2row2" ).load( "../content/contact.html");
+        });
         
     </script>
 
