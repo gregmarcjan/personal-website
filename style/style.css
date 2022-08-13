@@ -115,6 +115,7 @@ div.col2row1 {
     border-bottom-right-radius: 1em;
     border-style: solid 1px #cc5b28;
     margin-bottom: 1em;
+    padding-bottom: 1em;
     justify-content: center;
     align-items: center;
 }
@@ -168,7 +169,7 @@ div.profile {
     display: flex;
     justify-content: center;
     overflow: auto;
-    padding: 4em;
+    padding: 3.5em;
     padding-bottom: 2em;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
@@ -300,7 +301,7 @@ input[type=submit]:hover {
     
     div.col1 {
         margin: 0 auto;
-        margin-top: 30%;
+        margin-top: 35%;
         padding-bottom: 8px;
         width: 84%;
         margin-left: 5%;
@@ -389,7 +390,7 @@ input[type=submit]:hover {
     
     div.col2row1 h1 {
         font-family: 'Life Savers', cursive;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #cc5b28;
         padding-bottom: 0.5em;
         padding-top: 3%;
@@ -424,12 +425,32 @@ input[type=submit]:hover {
     width: 0;
     height: 100%;
     background-color: #cc5b28;
-    }
-    
-    /* Subpages within iFrame */ 
+    } 
     
     div.profile {
         display: inline-block;
+    }
+
+    div.profile h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    div.profile h2 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    div.photo {
+        width: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+
+    div.photo img {
+        align-self: center;
+        margin: 0.5rem;
     }
 
     .subpage {
@@ -466,4 +487,31 @@ input[type=submit]:hover {
         color: black;
         padding-bottom: 1em;
     }
+
+    input[type=submit] {
+        width: 5em;
+        background-color: #cc5b28;
+        border: none;
+        border-radius: 0.5em;
+        color: #e3e9cc;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.3rem;
+        font-family: 'Life Savers', cursive;
+        font-weight: 900;
+        margin: 4px 2px;
+        align-self: center;
+    }
+
+    @media screen and (max-width: 460x) {
+        
+        div.col1 {
+            margin-top: 35%;
+        }
+    }
+
+
+
 }
