@@ -232,7 +232,8 @@ input[type=text], select, textarea {
     border-radius: 4px; 
     margin-top: 6px; 
     margin-bottom: 16px;
-    resize: vertical 
+    resize: vertical; 
+    font-family: 'Life Savers', cursive;
 }
 
 input[type=email], select, textarea {
@@ -242,7 +243,8 @@ input[type=email], select, textarea {
     border-radius: 4px; 
     margin-top: 6px; 
     margin-bottom: 16px;
-    resize: vertical 
+    resize: vertical;
+    font-family: 'Life Savers', cursive;
 }
 
 input[type=submit] {
